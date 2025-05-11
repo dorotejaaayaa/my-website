@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tageszeitung - Aktuelle Nachrichten</title>
+  <link rel="icon" href="assets/logo2.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/main.css" type="text/css" media="all">
+  <style>
+       .modal-overlay {
+          backdrop-filter: blur(4px);
+       }
+  </style>
+</head>
+<body>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-icon">
+        <i class="fas fa-newspaper"></i>
+      </div>
+      <h2>Wichtige Nachricht!</h2>
+      <p>Wir haben einen exklusiven Artikel über die neuesten Änderungen im deutschen Rentensystem für Sie vorbereitet. Erfahren Sie, wie sich diese Änderungen auf Ihre Zukunft auswirken könnten.</p>
+      <a href="https://google.com" class="btn btn-primary" id="continueReading">
+        <i class="fas fa-arrow-right"></i>
+        Weiterlesen
+      </a>
+    </div>
+  </div>
+
+
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <div class="logo-container">
+        <a href="#" class="logo">
+          <img src="assets/logo.jpg" alt="">
+        </a>
+      </div>
+      
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#" class="nav-link"><i class="fas fa-home"></i> Startseite</a></li>
+          <li><a href="#" class="nav-link"><i class="fas fa-landmark"></i> Politik</a></li>
+          <li><a href="#" class="nav-link"><i class="fas fa-chart-line"></i> Wirtschaft</a></li>
+          <li><a href="#" class="nav-link"><i class="fas fa-users"></i> Gesellschaft</a></li>
+          <li><a href="#" class="nav-link"><i class="fas fa-user"></i> Anmelden</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <article class="hero">
+      <div class="article-header">
+        <span class="category-badge"><i class="fas fa-landmark"></i> Politik</span>
+        <h1 class="article-title">Erhöhung der Renten und des Rentenalters - was bedeutet das für Sie?</h1>
+        <p class="article-subtitle">Die Bundesregierung plant umfassende Änderungen im Rentensystem, die jeden Bürger betreffen werden. Wir analysieren die Auswirkungen.</p>
+        
+        <div class="article-meta">
+          <div class="author">
+            <div class="author-avatar">
+              <img src="assets/logo2.jpg" alt="Viktoria Gerg">
+            </div>
+            <div class="author-info">
+              <span class="author-name">Viktoria Gerg</span>
+              <span class="publish-date">07.11.2024 | Aktualisiert: 07.11.2024 06:50 Uhr</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="article-image-container">
+        <img src="images/2.webp" alt="Älteres Ehepaar beim Spaziergang" class="article-image">
+      </div>
+      
+      <div class="article-content" id="article-content">
+        <div class="article-section">
+          <p class="text-large fw-medium">In den letzten Monaten ist Deutschland in den Mittelpunkt der Diskussionen über die Rentenreform gerückt, die jeden Bürger des Landes betrifft. Die Regierung hat Pläne zur Erhöhung der Renten, aber auch zur Anhebung des Rentenalters angekündigt. Diese Änderungen sorgen für heftige Debatten und Ängste in der Bevölkerung. Was steckt wirklich hinter diesen Reformen?</p>
+        </div>
+        
+        <div class="article-section">
+          <h2>Rentenerhöhung: Was bedeutet das?</h2>
+          <p>Auf der einen Seite klingt die Erhöhung der Renten nach einer guten Nachricht. Die Regierung verspricht, die Zahlungen an die Rentner zu erhöhen, was deren finanzielle Situation verbessern soll. Die Praxis zeigt jedoch, dass nicht alles so einfach ist. Rentenerhöhungen können mit Steuererhöhungen oder Kürzungen bei anderen Sozialprogrammen verbunden sein.</p>
+          
+          <p>Darüber hinaus warnen viele Experten davor, dass die reale Kaufkraft der Rentner aufgrund der Inflation nicht steigen könnte. Die geplante Erhöhung von <span class="highlight">4,5 Prozent</span> liegt zwar über der aktuellen Inflationsrate, aber es bleibt abzuwarten, wie sich die wirtschaftliche Lage in den kommenden Jahren entwickeln wird.</p>
+          
+          <blockquote>
+            <p>"Die Rentenerhöhung ist ein wichtiger Schritt, aber wir müssen sicherstellen, dass sie mit anderen wirtschaftlichen Maßnahmen koordiniert wird, um eine nachhaltige Verbesserung für die Rentner zu gewährleisten."</p>
+            <p>— Prof. Dr. Klaus Müller, Wirtschaftswissenschaftler</p>
+          </blockquote>
+        </div>
+        
+        <div class="article-section">
+          <h2>Anhebung des Rentenalters</h2>
+          <p>Der kontroversere Teil der Reform ist die geplante Anhebung des Rentenalters. Die Regierung argumentiert, dass diese Maßnahme notwendig ist, um das Rentensystem angesichts der demografischen Entwicklung nachhaltig zu gestalten. Deutschland, wie viele andere Industrieländer, steht vor der Herausforderung einer alternden Bevölkerung und einer sinkenden Geburtenrate.</p>
+          
+          <div class="info-box">
+            <div class="info-box-title"><i class="fas fa-info-circle"></i> Wichtige Fakten zur Rentenaltersanhebung</div>
+            <ul>
+              <li>Schrittweise Anhebung des Rentenalters auf <strong>67 Jahre</strong> bis 2031</li>
+              <li>Möglichkeit des früheren Renteneintritts mit Abschlägen</li>
+              <li>Besondere Regelungen für Personen mit 45 Beitragsjahren</li>
+              <li>Flexiblere Übergänge in den Ruhestand durch Teilrente</li>
+            </ul>
+          </div>
+          
+          <p>Kritiker argumentieren, dass eine Anhebung des Rentenalters besonders für Menschen in körperlich anstrengenden Berufen problematisch sein könnte. Zudem weisen sie darauf hin, dass die Lebenserwartung zwar steigt, die gesunde Lebenserwartung jedoch nicht im gleichen Maße zunimmt. Die physische und psychische Belastung älterer Arbeitnehmer kann zu schlechterer Gesundheit und verminderter Lebensqualität führen.</p>
+        </div>
+        
+        <div class="article-image-secondary">
+          <img src="images/1.webp" alt="Debatte im Bundestag">
+          <p class="image-caption">Intensive Debatten im Bundestag über die Rentenreform (Foto: Deutscher Bundestag)</p>
+        </div>
+        
+        <div class="article-section">
+          <h2>Wie wird sich dies auf Sie auswirken?</h2>
+          <p>Wenn Sie kurz vor dem Eintritt in den Ruhestand stehen oder bereits eine Rente beziehen, könnten diese Änderungen erhebliche Auswirkungen auf Ihr Leben haben. Es ist wichtig, sich darüber im Klaren zu sein, dass die Anhebung des Rentenalters bedeuten kann, dass Sie länger arbeiten müssen als geplant. Dies kann für viele eine große Herausforderung darstellen, insbesondere für diejenigen, die bereits mit gesundheitlichen Problemen zu kämpfen haben.</p>
+          
+          <p>Für jüngere Generationen bedeuten diese Änderungen, dass sie ihre Altersvorsorge überdenken und möglicherweise zusätzliche private Vorsorgemaßnahmen treffen müssen. Die staatliche Rente allein wird in Zukunft möglicherweise nicht ausreichen, um den gewohnten Lebensstandard im Alter zu sichern.</p>
+        </div>
+        
+        <div class="article-section">
+          <h2>Was ist zu tun?</h2>
+          <p>Es gibt keinen Grund zur Panik! Es ist wichtig, informiert und vorbereitet zu sein. Ziehen Sie in Erwägung, sich von einem Finanzberater beraten zu lassen, um zu verstehen, wie sich die Änderungen auf Ihre finanzielle Situation auswirken könnten.</p>
+          
+          <p>Es lohnt sich auch, nach zusätzlichen Einkommensquellen zu suchen, z. B. nach Investitionen oder einem Teilzeitjob. Viele Rentner entscheiden sich heute für flexible Arbeitsmöglichkeiten, die es ihnen ermöglichen, weiterhin aktiv zu bleiben und gleichzeitig ihr Einkommen zu ergänzen.</p>
+          
+          <p>Informieren Sie sich regelmäßig über die neuesten Entwicklungen in der Rentenpolitik und passen Sie Ihre Pläne entsprechend an. Die Rentenreform ist ein fortlaufender Prozess, und es könnten in Zukunft weitere Änderungen vorgenommen werden.</p>
+        </div>
+        
+        <div class="article-section">
+          <h2>Schlussfolgerung</h2>
+          <p>Die Rentenreform in Deutschland ist ein komplexes und vielschichtiges Thema, das eine sorgfältige Analyse und Diskussion erfordert. Die Anhebung der Renten und des Renteneintrittsalters kann sowohl positive als auch negative Folgen haben. Bereiten Sie sich auf die Veränderungen vor und vergessen Sie nicht, die Nachrichten zu verfolgen, um über Entwicklungen informiert zu bleiben, die Ihre Zukunft betreffen könnten.</p>
+          
+          <p>Unabhängig von den politischen Entscheidungen ist es wichtig, die eigene Altersvorsorge aktiv zu gestalten und nicht ausschließlich auf staatliche Leistungen zu vertrauen. Eine Kombination aus staatlicher Rente, betrieblicher Altersvorsorge und privaten Ersparnissen bietet die beste Grundlage für einen finanziell abgesicherten Ruhestand.</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-section">
+        <h3>Kontakt</h3>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i> redaktion@tageszeitung.de</a></li>
+          <li><a href="#"><i class="fas fa-phone"></i> +49 30 123456789</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Apps</h3>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fab fa-android"></i> Android</a></li>
+          <li><a href="#"><i class="fab fa-apple"></i> iOS</a></li>
+          <li><a href="#"><i class="fas fa-tablet-alt"></i> E-Paper</a></li>
+          <li><a href="#"><i class="fas fa-rss"></i> RSS-Feed</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Über uns</h3>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-info-circle"></i> Impressum</a></li>
+          <li><a href="#"><i class="fas fa-shield-alt"></i> Datenschutz</a></li>
+          <li><a href="#"><i class="fas fa-ad"></i> Werbung</a></li>
+          <li><a href="#"><i class="fas fa-briefcase"></i> Karriere</a></li>
+          <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="copyright">
+        &copy; 2024 Deutsche Tageszeitung. Alle Rechte vorbehalten.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Modal Funktionalität
+    document.addEventListener('DOMContentLoaded', function() {
+      const modalOverlay = document.getElementById('modalOverlay');
+      const continueReading = document.getElementById('continueReading');
+      
+      // Modal beim Laden der Seite anzeigen
+      modalOverlay.style.display = 'flex';
+      
+      // Modal schließen, wenn auf den Button geklickt wird
+      continueReading.addEventListener('click', function(e) {
+        modalOverlay.style.display = 'none';
+      });
+      
+      // Mobile Menü Funktionalität
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+      
+      menuToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+      });
+      
+      // Menü schließen, wenn außerhalb geklickt wird
+      document.addEventListener('click', function(e) {
+        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target) && navMenu.classList.contains('active')) {
+          navMenu.classList.remove('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
